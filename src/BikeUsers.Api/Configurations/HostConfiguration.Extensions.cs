@@ -1,3 +1,7 @@
+using BikeUsers.Application.BikeUsages.Brokers;
+using BikeUsers.Infrastructure.BikeUsages.Brokers;
+using BikeUsers.Infrastructure.Settings;
+
 namespace BikeUsers.Api.Configurations;
 
 public static partial class HostConfiguration
@@ -6,9 +10,24 @@ public static partial class HostConfiguration
     /// Registers NotificationDbContext in DI 
     /// </summary>
     /// <param name="builder"></param>
+    /// <exception cref="ArgumentNullException">If api settings not found</exception>
     /// <returns></returns>
     private static WebApplicationBuilder AddBikeUsageInfrastructure(this WebApplicationBuilder builder)
     {
+        // Register settings
+        builder.Services.Configure<BikeUsagePredictionApiSettings>(builder.Configuration.GetSection(nameof(BikeUsagePredictionApiSettings)));
+        var bikeUsageApiSettings = builder.Configuration.GetSection(nameof(BikeUsagePredictionApiSettings)).Get<BikeUsagePredictionApiSettings>() ??
+                                   throw new ArgumentNullException(nameof(BikeUsagePredictionApiSettings));
+
+        // Register interceptors
+        builder.Services.AddTransient<AuthenticationHandler>();
+        
+        // Register http clients
+        builder.Services.AddHttpClient<IBikeUsagePredictionApiBroker, BikeUsagePredictionApiBroker>(
+                client => { client.BaseAddress = new Uri(bikeUsageApiSettings.BaseAddress); }
+            )
+            .AddHttpMessageHandler<AuthenticationHandler>();
+
         return builder;
     }
 

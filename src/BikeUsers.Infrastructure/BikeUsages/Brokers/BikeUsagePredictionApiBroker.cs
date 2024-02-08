@@ -7,7 +7,7 @@ namespace BikeUsers.Infrastructure.BikeUsages.Brokers;
 /// <summary>
 /// Provides the bike usage prediction API client functionality.
 /// </summary>
-public class BikeUsagePredictionApiClient(HttpClient httpClient) : IBikeUsagePredictionApiClient
+public class BikeUsagePredictionApiBroker(HttpClient httpClient) : IBikeUsagePredictionApiBroker
 {
     public async ValueTask<BikeUsageResponse?> GetPredictedUsersAsync(BikeUsageRequest request)
     {

@@ -5,7 +5,7 @@ namespace BikeUsers.Application.BikeUsages.Brokers;
 /// <summary>
 /// Defines the bike usage prediction model endpoint client.
 /// </summary>
-public interface IBikeUsagePredictionApiClient
+public interface IBikeUsagePredictionApiBroker
 {
     /// <summary>
     /// Gets the predicted bike users.
