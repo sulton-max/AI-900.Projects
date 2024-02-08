@@ -24,7 +24,7 @@ Given the bike usage dataset with following features, predict the bike usage for
 - `dteday` - Date
 - `hr` - hours
 - `weathersit` - Weather 
-  1. Clear, Few clouds, Partly cloudy, Partly cloudy
+  1. Clear, Few clouds, Partly cloudy
   2. Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist
   3. Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds
   4. Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog
@@ -36,11 +36,11 @@ Given the bike usage dataset with following features, predict the bike usage for
 
 ### Solution plan
 
-- regression ML modal - as data is continuous data, use regression model for training
-- create model and train
-- create Web API to communicate with model
+- Create and train ML model
+- Deploy ML model as web service
+- Create local Web API and integrate with Web Service
 
-#### Creating ML Model step by step
+### Creating ML Model step by step
 
 - Open [Azure Machine Learning Studio](https://ml.azure.com/home)
 - Go to `Worksapces` tab and press `New`
@@ -93,16 +93,33 @@ Given the bike usage dataset with following features, predict the bike usage for
 - Choose Serverless CPU compute with instance `Standard DS3 v2` with 1 instance
 - Submit training data
 
-In my example it took x minutes
+In my example it took 14 minutes
 
-#### Creating ML endpoint
+### Deploying ML model
 
-#### Creating Web API
+<img src="assets/images/6.png" style="width: 100%"/>
+
+- After job is finished open best model on the right side
+- Press Deploy and choose Web Service
+- Choose Azure Container Instance for Compute type
+- Enable authentication and deploy
+
+#### Testing the endpoint
+
+- Open Endpoints tab and open Test section
+- 
+
+### Creating Web API
 
 - Create Web API in Asp.NET Core using empty template
+- Install `Azure.ResourceManager.MachineLearning` library
 - Add broker for Azure ML endpoint
 - Register broker and create endpoints
 - Configure Web API
+
+Result : 
+
+<img src="assets/images/7.png" style="width: 100%"/>
 
 #### License
 
