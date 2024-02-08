@@ -1,7 +1,8 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeUsers.Api", "BikeUsers.Api\BikeUsers.Api.csproj", "{F62F08B5-4C37-4E64-BF7A-898534528BBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeUsers.Infrastructure", "BikeUsers.Infrastructure\BikeUsers.Infrastructure.csproj", "{C1C547F2-0437-46C7-99A7-6B1959107881}"
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +13,9 @@ Global
 		{F62F08B5-4C37-4E64-BF7A-898534528BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F62F08B5-4C37-4E64-BF7A-898534528BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F62F08B5-4C37-4E64-BF7A-898534528BBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1C547F2-0437-46C7-99A7-6B1959107881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1C547F2-0437-46C7-99A7-6B1959107881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1C547F2-0437-46C7-99A7-6B1959107881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1C547F2-0437-46C7-99A7-6B1959107881}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
