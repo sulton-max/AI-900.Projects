@@ -12,5 +12,5 @@ public interface IBikeUsagePredictionApiClient
     /// </summary>
     /// <param name="request">Bike usage request</param>
     /// <returns>Bike usage prediction</returns>
-    ValueTask<BikeUsageResponse> GetPredictedUsersAsync(BikeUsageRequest request);
+    ValueTask<BikeUsageResponse?> GetPredictedUsersAsync(BikeUsageRequest request);
 }
