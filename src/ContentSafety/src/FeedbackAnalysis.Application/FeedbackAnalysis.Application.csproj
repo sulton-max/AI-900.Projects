@@ -10,8 +10,4 @@
       <ProjectReference Include="..\FeedbackAnalysis.Domain\FeedbackAnalysis.Domain.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Common\ContentSafety\Models\" />
-    </ItemGroup>
-
 </Project>
