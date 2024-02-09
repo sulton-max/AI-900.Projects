@@ -93,4 +93,6 @@ Feedback with unsafe comment
 
 Result : ( 1 means Rejected )
 
+Result : ( 1 means Rejected )
+
 <img src="assets/images/6.png" style="width: 100%"/>

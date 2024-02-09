@@ -107,7 +107,7 @@ In my example it took 14 minutes
 #### Testing the endpoint
 
 - Open Endpoints tab and open Test section
-- 
+- Send request with some changes on request body
 
 ### Creating Web API
 
@@ -120,7 +120,3 @@ In my example it took 14 minutes
 Result : 
 
 <img src="assets/images/7.png" style="width: 100%"/>
-
-#### License
-
-This demo is licensed under MIT license and available for free
