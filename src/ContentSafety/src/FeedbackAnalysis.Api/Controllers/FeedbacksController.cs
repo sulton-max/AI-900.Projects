@@ -12,6 +12,6 @@ public class FeedbacksController(IFeedbackProcessingService feedbackProcessingSe
     public async ValueTask<IActionResult> CreateAsync([FromBody] Feedback feedback)
     {
         var result = await feedbackProcessingService.CreateAsync(feedback);
-        return Ok(result);
+        return Ok(result.ConfirmationAction.ToString());
     }
 }
