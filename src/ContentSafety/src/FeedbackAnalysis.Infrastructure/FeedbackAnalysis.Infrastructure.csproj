@@ -14,4 +14,8 @@
       <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.1" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Common\ContentSafety\Extensions\" />
+    </ItemGroup>
+
 </Project>
