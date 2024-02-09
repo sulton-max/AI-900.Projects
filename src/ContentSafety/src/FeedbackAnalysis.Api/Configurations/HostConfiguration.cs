@@ -11,7 +11,8 @@ public static partial class HostConfiguration
     {
         builder
             .AddSerializers()
-            .AddBikeUsageInfrastructure()
+            .AddContentSafetyInfrastructure()
+            .AddFeedbacksInfrastructure()
             .AddDevTools()
             .AddExposers();
 

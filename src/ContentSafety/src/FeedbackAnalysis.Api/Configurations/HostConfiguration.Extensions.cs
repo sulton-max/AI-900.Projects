@@ -1,14 +1,15 @@
 using FeedbackAnalysis.Application.Common.ContentSafety.Brokers;
 using FeedbackAnalysis.Application.Common.Serializers;
+using FeedbackAnalysis.Application.Feedbacks.Services;
 using FeedbackAnalysis.Infrastructure.Common.ContentSafety.Brokers;
 using FeedbackAnalysis.Infrastructure.Common.ContentSafety.Settings;
 using FeedbackAnalysis.Infrastructure.Common.Serializers;
+using FeedbackAnalysis.Infrastructure.Feedbacks.Services;
 
 namespace FeedbackAnalysis.Api.Configurations;
 
 public static partial class HostConfiguration
 {
-    
     /// <summary>
     /// Configures and adds Serializers to web application.
     /// </summary>
@@ -21,14 +22,22 @@ public static partial class HostConfiguration
 
         return builder;
     }
-    
+
+    private static WebApplicationBuilder AddFeedbacksInfrastructure(this WebApplicationBuilder builder)
+    {
+        // Register processing services
+        builder.Services.AddScoped<IFeedbackProcessingService, FeedbackProcessingService>();
+
+        return builder;
+    }
+
     /// <summary>
     /// Registers NotificationDbContext in DI 
     /// </summary>
     /// <param name="builder"></param>
     /// <exception cref="ArgumentNullException">If api settings not found</exception>
     /// <returns></returns>
-    private static WebApplicationBuilder AddBikeUsageInfrastructure(this WebApplicationBuilder builder)
+    private static WebApplicationBuilder AddContentSafetyInfrastructure(this WebApplicationBuilder builder)
     {
         // Register settings
         builder.Services.Configure<ContentSafetyApiSettings>(builder.Configuration.GetSection(nameof(ContentSafetyApiSettings)));

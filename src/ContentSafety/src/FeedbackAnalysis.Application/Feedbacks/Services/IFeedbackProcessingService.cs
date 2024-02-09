@@ -3,7 +3,7 @@ using FeedbackAnalysis.Domain.Models.Entities;
 namespace FeedbackAnalysis.Application.Feedbacks.Services;
 
 /// <summary>
-/// Defines feedback processing service methods.
+/// Defines feedback processing service functionalities.
 /// </summary>
 public interface IFeedbackProcessingService
 {
