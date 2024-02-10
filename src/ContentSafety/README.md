@@ -1,6 +1,6 @@
 ### Introduction
 
-This is demo of using Regression Machine Learning model with Azure Machine Learning Studio and utilizing using local Web API with Asp.NET Core
+This is demo of using Azure AI Content Safety service and integrating it with feedback system to validate feedback content for safety
 
 ### Getting started
 
