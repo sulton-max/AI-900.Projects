@@ -40,7 +40,6 @@ public static partial class HostConfiguration
         return builder;
     }
 
-
     /// <summary>
     /// Configures exposers including controllers
     /// </summary>
