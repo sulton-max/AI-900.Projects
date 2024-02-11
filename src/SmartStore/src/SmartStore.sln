@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartStore.Api", "SmartStore.Api\SmartStore.Api.csproj", "{73AF1EBA-11F4-44FE-B2AD-BE56EDBA5770}"
 EndProject
