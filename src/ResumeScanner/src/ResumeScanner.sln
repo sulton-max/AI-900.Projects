@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResumeScanner.Api", "ResumeScanner.Api\ResumeScanner.Api.csproj", "{B330CFBA-A95B-4AE1-96BE-D93FA908B045}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResumeScanner.Application", "ResumeScanner.Application\ResumeScanner.Application.csproj", "{D4ABDE6B-CD37-4869-8C78-057927679820}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResumeScanner.Infrastructure", "ResumeScanner.Infrastructure\ResumeScanner.Infrastructure.csproj", "{C1B80C06-E7E9-4D37-B69C-D9569657506B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B330CFBA-A95B-4AE1-96BE-D93FA908B045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B330CFBA-A95B-4AE1-96BE-D93FA908B045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B330CFBA-A95B-4AE1-96BE-D93FA908B045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B330CFBA-A95B-4AE1-96BE-D93FA908B045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4ABDE6B-CD37-4869-8C78-057927679820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4ABDE6B-CD37-4869-8C78-057927679820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4ABDE6B-CD37-4869-8C78-057927679820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4ABDE6B-CD37-4869-8C78-057927679820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1B80C06-E7E9-4D37-B69C-D9569657506B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1B80C06-E7E9-4D37-B69C-D9569657506B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1B80C06-E7E9-4D37-B69C-D9569657506B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1B80C06-E7E9-4D37-B69C-D9569657506B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
