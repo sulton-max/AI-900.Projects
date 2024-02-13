@@ -17,7 +17,7 @@ This is demo of using Azure Computer Vision Service to integrate it to Talent Ma
 
 ### Problem
 
-We have Talent Management system, but uploaded 
+We have Talent Management system, but uploaded resume analysis isn't integrated, implement document OCR functionality to retrieve data from files
 
 ### Solution plan
 
@@ -61,9 +61,8 @@ Single service resource is also fine
 - Add memory cache and cache broker to get operation Id for past uploaded file
 - Add document scanner broker for Cognitive Service endpoint
 - Use `ComputerVisionClient` to upload and analyse images as documents
-- Register all brokers to infrastructure and configure web API
 - Create resume service to upload files
-- Configure Web API
+- Register all brokers to infrastructure and configure web API
 
 #### Example requests
 
