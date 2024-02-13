@@ -4,10 +4,19 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>a16e34a1-fc14-4853-a23a-28961df3ef58</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\ResumeScanner.Infrastructure\ResumeScanner.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Data\Images\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     </ItemGroup>
 
 </Project>
