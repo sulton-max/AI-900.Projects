@@ -4,6 +4,16 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>ea0da66f-3dad-4443-8c0c-f31f75bf83ef</UserSecretsId>
     </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\FeedbackAnalyzer.Infrastructure\FeedbackAnalyzer.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+      <PackageReference Include="Swashbuckle.Core" Version="5.6.0" />
+    </ItemGroup>
 
 </Project>

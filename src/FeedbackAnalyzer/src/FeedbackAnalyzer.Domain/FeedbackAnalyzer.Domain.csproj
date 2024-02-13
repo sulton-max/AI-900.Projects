@@ -6,8 +6,4 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
-    <ItemGroup>
-      <ProjectReference Include="..\FeedbackAnalyzer.Domain\FeedbackAnalyzer.Domain.csproj" />
-    </ItemGroup>
-
 </Project>
