@@ -76,6 +76,8 @@ Succeeded = 3
 
 #### Uploading resume document
 
+Uploading `1.jpeg` image in Api -> Data -> Images
+
 Result : 
 
 ```json

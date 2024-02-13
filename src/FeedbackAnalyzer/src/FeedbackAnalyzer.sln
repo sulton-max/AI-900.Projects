@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeedbackAnalyzer.Api", "FeedbackAnalyzer.Api\FeedbackAnalyzer.Api.csproj", "{6F2521DC-B194-442B-B390-676F27A77811}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeedbackAnalyzer.Application", "FeedbackAnalyzer.Application\FeedbackAnalyzer.Application.csproj", "{C32719DB-01B9-4648-8399-4D595A8BBDCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeedbackAnalyzer.Infrastructure", "FeedbackAnalyzer.Infrastructure\FeedbackAnalyzer.Infrastructure.csproj", "{BE6577A5-FF39-4E8A-B277-2C8250D0B0BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F2521DC-B194-442B-B390-676F27A77811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2521DC-B194-442B-B390-676F27A77811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2521DC-B194-442B-B390-676F27A77811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2521DC-B194-442B-B390-676F27A77811}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C32719DB-01B9-4648-8399-4D595A8BBDCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C32719DB-01B9-4648-8399-4D595A8BBDCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C32719DB-01B9-4648-8399-4D595A8BBDCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C32719DB-01B9-4648-8399-4D595A8BBDCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE6577A5-FF39-4E8A-B277-2C8250D0B0BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE6577A5-FF39-4E8A-B277-2C8250D0B0BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE6577A5-FF39-4E8A-B277-2C8250D0B0BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE6577A5-FF39-4E8A-B277-2C8250D0B0BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
