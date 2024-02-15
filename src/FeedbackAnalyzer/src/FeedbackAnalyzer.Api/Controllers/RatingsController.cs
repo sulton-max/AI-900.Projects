@@ -1,5 +1,7 @@
 using FeedbackAnalyzer.Application.Ratings.Commands;
 using FeedbackAnalyzer.Application.Ratings.Services;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FeedbackAnalyzer.Api.Controllers;
