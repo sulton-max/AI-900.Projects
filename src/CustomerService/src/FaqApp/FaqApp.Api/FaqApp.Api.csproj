@@ -4,6 +4,17 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>3a4be156-f10f-4910-8df2-c080a7017ba0</UserSecretsId>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Azure.Communication.Chat" Version="1.2.0" />
+      <PackageReference Include="Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime" Version="3.1.0-preview.1" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\FaqApp.Infrastructure\FaqApp.Infrastructure.csproj" />
+    </ItemGroup>
 
 </Project>
